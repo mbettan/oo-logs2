@@ -1,0 +1,101 @@
+2018-04-03 01:26:27,470 [ForkJoinPool-1-worker-1] (RemoteMethodExecutionManager.java:33) WARN  - Using [FixedThreadPool] thread pool with pool size [100] for executing remote invocations.
+2018-04-03 01:26:27,493 [ForkJoinPool-1-worker-1] (InvocationMessageEncoder.java:21) WARN  - Websocket message settings: MAX_SEND_BUFFER[4194304]
+2018-04-03 01:26:27,493 [ForkJoinPool-1-worker-1] (InvocationMessageEncoder.java:22) WARN  - Traffic compression settings : TRAFFIC_COMPRESSION_ENABLED[true]
+2018-04-03 01:26:27,494 [ForkJoinPool-1-worker-1] (InvocationMessageSender.java:26) WARN  - System property [SPLIT_BIG_MESSAGES] is [false]
+2018-04-03 01:26:28,150 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [xpathExpression] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,151 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [org.springframework.beans.factory.config.MethodInvokingFactoryBean#0] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,151 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [org.springframework.beans.factory.config.MethodInvokingFactoryBean#1] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,151 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [org.springframework.beans.factory.config.MethodInvokingFactoryBean#2] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,151 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [org.springframework.beans.factory.config.MethodInvokingFactoryBean#3] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,152 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [org.springframework.beans.factory.config.MethodInvokingFactoryBean#4] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,152 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [org.springframework.beans.factory.config.MethodInvokingFactoryBean#5] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,152 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [org.springframework.beans.factory.config.MethodInvokingFactoryBean#6] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,152 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [org.springframework.beans.factory.config.MethodInvokingFactoryBean#7] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,152 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [base.partition] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,155 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [base.trigger] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,155 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [base.job] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,156 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [localeDefinition] for secured proxies, skipping!!!!!
+2018-04-03 01:26:28,156 [ tyrus-jdk-client-2] (ClientRequestExecutorFactory.java:110) ERROR - Failed to load bean [bcp47Definition] for secured proxies, skipping!!!!!
+2018-04-03 01:49:28,000 [ForkJoinPool-24-worker-1] (TyrusWebSocketClientEndpoint.java:83) WARN  - Closing connection with reason [NORMAL_CLOSURE], message [Close on request Close connection]
+2018-04-03 01:49:28,008 [pool-239-thread-1] (TyrusWebSocketClientNetConnector.java:153) ERROR - Failed to established connection to RAS - check RAS [ip:port] configuration.
+javax.websocket.DeploymentException: Connection failed.
+	at org.glassfish.tyrus.container.jdk.client.TyrusJdkClientContainer$1.call(TyrusJdkClientContainer.java:201)
+	at org.glassfish.tyrus.container.jdk.client.TyrusJdkClientContainer$1.call(TyrusJdkClientContainer.java:127)
+	at org.glassfish.tyrus.container.jdk.client.TyrusJdkClientContainer.openClientSocket(TyrusJdkClientContainer.java:206)
+	at org.glassfish.tyrus.client.ClientManager$3$1.run(ClientManager.java:668)
+	at org.glassfish.tyrus.client.ClientManager$3.run(ClientManager.java:717)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.glassfish.tyrus.client.ClientManager$SameThreadExecutorService.execute(ClientManager.java:871)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.glassfish.tyrus.client.ClientManager.connectToServer(ClientManager.java:516)
+	at org.glassfish.tyrus.client.ClientManager.connectToServer(ClientManager.java:378)
+	at com.hp.oo.connector.client.websocket.tyrus.TyrusWebSocketClientNetConnector.lambda$connect$0(TyrusWebSocketClientNetConnector.java:146)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:252)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:198)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:213)
+	at sun.nio.ch.EPollPort$EventHandlerTask.run(EPollPort.java:293)
+	... 1 more
+2018-04-03 01:49:28,009 [ForkJoinPool-24-worker-1] (TyrusWebSocketClientNetConnector.java:173) ERROR - Failed to established connection to RAS - check RAS [ip:port] configuration.
+2018-04-03 01:49:28,012 [ForkJoinPool-24-worker-1] (TyrusWebSocketClientEndpoint.java:83) WARN  - Closing connection with reason [NORMAL_CLOSURE], message [Close on request  Failed to connect]
+2018-04-03 01:50:28,021 [pool-240-thread-1] (TyrusWebSocketClientNetConnector.java:153) ERROR - Failed to established connection to RAS - check RAS [ip:port] configuration.
+javax.websocket.DeploymentException: Connection failed.
+	at org.glassfish.tyrus.container.jdk.client.TyrusJdkClientContainer$1.call(TyrusJdkClientContainer.java:201)
+	at org.glassfish.tyrus.container.jdk.client.TyrusJdkClientContainer$1.call(TyrusJdkClientContainer.java:127)
+	at org.glassfish.tyrus.container.jdk.client.TyrusJdkClientContainer.openClientSocket(TyrusJdkClientContainer.java:206)
+	at org.glassfish.tyrus.client.ClientManager$3$1.run(ClientManager.java:668)
+	at org.glassfish.tyrus.client.ClientManager$3.run(ClientManager.java:717)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.glassfish.tyrus.client.ClientManager$SameThreadExecutorService.execute(ClientManager.java:871)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.glassfish.tyrus.client.ClientManager.connectToServer(ClientManager.java:516)
+	at org.glassfish.tyrus.client.ClientManager.connectToServer(ClientManager.java:378)
+	at com.hp.oo.connector.client.websocket.tyrus.TyrusWebSocketClientNetConnector.lambda$connect$0(TyrusWebSocketClientNetConnector.java:146)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:252)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:198)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:213)
+	at sun.nio.ch.EPollPort$EventHandlerTask.run(EPollPort.java:293)
+	... 1 more
+2018-04-03 01:50:28,022 [ForkJoinPool-25-worker-1] (TyrusWebSocketClientNetConnector.java:173) ERROR - Failed to established connection to RAS - check RAS [ip:port] configuration.
+2018-04-03 01:50:28,022 [ForkJoinPool-25-worker-1] (TyrusWebSocketClientEndpoint.java:83) WARN  - Closing connection with reason [NORMAL_CLOSURE], message [Close on request  Failed to connect]
+2018-04-03 01:51:28,032 [pool-241-thread-1] (TyrusWebSocketClientNetConnector.java:153) ERROR - Failed to established connection to RAS - check RAS [ip:port] configuration.
+javax.websocket.DeploymentException: Connection failed.
+	at org.glassfish.tyrus.container.jdk.client.TyrusJdkClientContainer$1.call(TyrusJdkClientContainer.java:201)
+	at org.glassfish.tyrus.container.jdk.client.TyrusJdkClientContainer$1.call(TyrusJdkClientContainer.java:127)
+	at org.glassfish.tyrus.container.jdk.client.TyrusJdkClientContainer.openClientSocket(TyrusJdkClientContainer.java:206)
+	at org.glassfish.tyrus.client.ClientManager$3$1.run(ClientManager.java:668)
+	at org.glassfish.tyrus.client.ClientManager$3.run(ClientManager.java:717)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.glassfish.tyrus.client.ClientManager$SameThreadExecutorService.execute(ClientManager.java:871)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.glassfish.tyrus.client.ClientManager.connectToServer(ClientManager.java:516)
+	at org.glassfish.tyrus.client.ClientManager.connectToServer(ClientManager.java:378)
+	at com.hp.oo.connector.client.websocket.tyrus.TyrusWebSocketClientNetConnector.lambda$connect$0(TyrusWebSocketClientNetConnector.java:146)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:252)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:198)
+	at sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:213)
+	at sun.nio.ch.EPollPort$EventHandlerTask.run(EPollPort.java:293)
+	at sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+	... 3 more
+2018-04-03 01:51:28,032 [ForkJoinPool-26-worker-1] (TyrusWebSocketClientNetConnector.java:173) ERROR - Failed to established connection to RAS - check RAS [ip:port] configuration.
+2018-04-03 01:51:28,033 [ForkJoinPool-26-worker-1] (TyrusWebSocketClientEndpoint.java:83) WARN  - Closing connection with reason [NORMAL_CLOSURE], message [Close on request  Failed to connect]

@@ -1,0 +1,11 @@
+[INFO] OO Post Initialization Script Starting
+[WARNING] OO is not available, retrying in 5 seconds
+[WARNING] OO is not available, retrying in 5 seconds
+[WARNING] OO is not available, retrying in 5 seconds
+[INFO] OO is available
+[INFO] Configuring ooInboundUser & admin accounts
+[INFO] OO Post Initialization Script Completed
+[INFO] Updating OO System Properties for CSA Started
+[INFO] Updating OO System Property : CSA_REST_CREDENTIALS... 
+[INFO] Updating OO System Property : CSA_OO_USER... 
+[INFO] Update OO System Properties for CSA Completed
